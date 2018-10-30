@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:layout_editor_absoluteX="360dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <RelativeLayout
+        android:id="@+id/biaoti"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#236fb1">
+        <TextView
+            android:text="Personal Detail"
+            android:id="@+id/text_title"
+            android:textSize="21sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/button_backward"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="#5587b3"
+            android:drawablePadding="6dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="Back"
+            android:textColor="#ffffffff"
+            android:textSize="18dp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button_forward"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#5587b3"
+            android:drawablePadding="6dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="Next"
+            android:textColor="#ffffffff"
+            android:textSize="18dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="1dp"
+        android:paddingTop="2dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="100dp"
+            android:layout_height="43dp"
+            android:text="Patient ID"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="2dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="158dp"
+            android:layout_height="38dp"
+            android:text="Year of birth (yyyy):"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/birth"
+            android:layout_width="170dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:digits="1234567890"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:maxLines="2"
+            android:padding="10dp"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/r1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/r2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="White - British" />
+
+
+        <RadioButton
+            android:id="@+id/r3"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="White - Irish" />
+
+
+        <RadioButton
+            android:id="@+id/r4"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Other white background" />
+
+
+        <RadioButton
+            android:id="@+id/r5"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Black or Black British-Carribean" />
+
+
+        <RadioButton
+            android:id="@+id/r6"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:duplicateParentState="false"
+            android:text="Black or Black British-African" />
+
+
+       <RadioButton
+            android:id="@+id/r7"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:checked="false"
+            android:text="Other Black Backgroun" />
+
+
+       <RadioButton
+            android:id="@+id/r8"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Asian or Asian British-Indian" />.
+
+       <RadioButton
+            android:id="@+id/r9"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Asian or Asian British-Pakistani" />
+
+       <RadioButton
+            android:id="@+id/r10"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Asian or Asian British-Bangladeshi" />
+
+
+       <RadioButton
+            android:id="@+id/r11"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Chinese" />
+
+       <RadioButton
+            android:id="@+id/r12"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Mixed – White and Black Carribean" />
+
+       <RadioButton
+            android:id="@+id/r13"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="White and Black-African" />
+
+       <RadioButton
+            android:id="@+id/r14"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Other Asian Background" />
+
+       <RadioButton
+            android:id="@+id/r15"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Other Mixed Background" />
+
+       <RadioButton
+            android:id="@+id/r16"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Other Ethic background" />
+
+       <RadioButton
+            android:id="@+id/r17"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Not Known" />
+
+       <RadioButton
+            android:id="@+id/r18"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Information refused" />
+    </RadioGroup>
+
+
+    </LinearLayout>

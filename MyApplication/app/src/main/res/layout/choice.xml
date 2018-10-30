@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:layout_editor_absoluteX="360dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <RelativeLayout
+        android:id="@+id/biaoti"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#e96a16">
+        <TextView
+            android:text="Choose"
+            android:id="@+id/text_title"
+            android:textSize="21sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="150dp"
+        android:layout_marginTop="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:text="Investigation"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="120dp"
+        android:layout_height="wrap_content"
+        android:text="Obersevation"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="162dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="120dp"
+        android:layout_height="wrap_content"
+        android:text="Clinic Review"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="78dp"
+        tools:ignore="MissingConstraints" />
+
+
+</LinearLayout>

@@ -1,0 +1,211 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:layout_editor_absoluteX="360dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <RelativeLayout
+        android:id="@+id/biaoti"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#236fb1">
+        <TextView
+            android:text="Clinic Review"
+            android:id="@+id/text_title"
+            android:textSize="21sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/button_backward"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="#5587b3"
+            android:drawablePadding="6dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="Back"
+            android:textColor="#ffffffff"
+            android:textSize="18dp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button_forward"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#5587b3"
+            android:drawablePadding="6dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="Next"
+            android:textColor="#ffffffff"
+            android:textSize="18dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autoText="false"
+        android:text="Flutamide"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="21sp" />
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="5dp">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="121dp"
+            android:layout_height="60dp"
+            android:text="current intake" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="122dp"
+            android:layout_height="60dp"
+            android:text="previous intake" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="95dp"
+            android:layout_height="60dp"
+            android:text="never taken" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autoText="false"
+        android:text="Finasteride"
+        android:textSize="21sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="5dp">
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="121dp"
+            android:layout_height="60dp"
+            android:text="current intake" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="122dp"
+            android:layout_height="60dp"
+            android:text="previous intake" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="95dp"
+            android:layout_height="60dp"
+            android:text="never taken" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autoText="false"
+        android:text="Dutasteride"
+        android:textSize="21sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="5dp">
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="121dp"
+            android:layout_height="60dp"
+            android:text="current intake" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="122dp"
+            android:layout_height="60dp"
+            android:text="previous intake" />
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="95dp"
+            android:layout_height="60dp"
+            android:text="never taken" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autoText="false"
+        android:text="Metformin "
+        android:textSize="21sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="5dp">
+
+        <RadioButton
+            android:id="@+id/radioButton10"
+            android:layout_width="121dp"
+            android:layout_height="60dp"
+            android:text="current intake" />
+
+        <RadioButton
+            android:id="@+id/radioButton11"
+            android:layout_width="122dp"
+            android:layout_height="60dp"
+            android:text="previous intake" />
+
+        <RadioButton
+            android:id="@+id/radioButton12"
+            android:layout_width="95dp"
+            android:layout_height="60dp"
+            android:text="never taken" />
+    </LinearLayout>
+
+</LinearLayout>

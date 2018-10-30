@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:layout_editor_absoluteX="360dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <RelativeLayout
+        android:id="@+id/biaoti"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#236fb1">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Clinic Review"
+            android:textColor="#fff"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/button_backward"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="#5587b3"
+            android:drawablePadding="6dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="Back"
+            android:textColor="#ffffffff"
+            android:textSize="18dp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button_forward"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#5587b3"
+            android:drawablePadding="6dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="Next"
+            android:textColor="#ffffffff"
+            android:textSize="18dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autoText="false"
+        android:text="Reasons for referral (according to Patient; please tick all that apply):"
+        android:textSize="21sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="326dp"
+        android:layout_height="60dp"
+        android:text="Oligo-/amenorrhoea " />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="327dp"
+        android:layout_height="60dp"
+        android:text="Hirsutism" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="326dp"
+        android:layout_height="60dp"
+        android:text="Acne" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="326dp"
+        android:layout_height="60dp"
+        android:text="Difficulties to conceive" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="326dp"
+        android:layout_height="60dp"
+        android:text="Weight gain" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="326dp"
+        android:layout_height="60dp"
+        android:text="Polycystic ovaries" />
+
+</LinearLayout>

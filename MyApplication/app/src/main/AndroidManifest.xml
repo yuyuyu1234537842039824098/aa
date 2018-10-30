@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.myapplication">
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".otherActivity"></activity>
+        <activity android:name=".MenstrualCycle"></activity>
+        <activity android:name=".SkinWeight"></activity>
+        <activity android:name=".SleepDepression"></activity>
+        <activity android:name=".yfh1"></activity>
+        <activity android:name=".yfh2"></activity>
+        <activity android:name=".yfh3"></activity>
+        <activity android:name=".YourHealth1"></activity>
+        <activity android:name=".YourHealth2"></activity>
+        <activity android:name=".YourHealth3"></activity>
+        <activity android:name=".Bodyhair1"></activity>
+        <activity android:name=".BodyHair2"></activity>
+        <activity android:name=".BodyHair3"></activity>
+        <activity android:name=".ob1"></activity>
+        <activity android:name=".ob2"></activity>
+        <activity android:name=".choice"></activity>
+        <activity android:name=".ib"></activity>
+        <activity android:name=".cv1"></activity>
+        <activity android:name=".cv2"></activity>
+        <activity android:name=".cv3"></activity>
+        <activity android:name=".cv4"></activity>
+        <activity android:name=".cv5"></activity>
+        <activity android:name=".cv6"></activity>
+        <activity android:name=".cv7"></activity>
+    </application>
+
+</manifest>

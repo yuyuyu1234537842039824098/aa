@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "645340555038",
+    "firebase_url": "https://androgen-excess.firebaseio.com",
+    "project_id": "androgen-excess",
+    "storage_bucket": "androgen-excess.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645340555038:android:f515085f01f20f86",
+        "android_client_info": {
+          "package_name": "com.example.admin.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "645340555038-68ktit3v99drh0isdfkglok8f7fpc00p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admin.myapplication",
+            "certificate_hash": "c247b2751f5fa4bf979cf7faa209a38c200ba88d"
+          }
+        },
+        {
+          "client_id": "645340555038-vrslegvnoeunvpr9hadkauopac797d8a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg3f2n0xAnUjZHi0VrHDiSBI7ueKYL41I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "645340555038-vrslegvnoeunvpr9hadkauopac797d8a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

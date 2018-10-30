@@ -1,0 +1,382 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:layout_editor_absoluteX="360dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <RelativeLayout
+        android:id="@+id/biaoti"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#236fb1">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Observation"
+            android:textColor="#fff"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/button_backward"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="#5587b3"
+            android:drawablePadding="6dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="Back"
+            android:textColor="#ffffffff"
+            android:textSize="18dp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button_forward"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#5587b3"
+            android:drawablePadding="6dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text="Next"
+            android:textColor="#ffffffff"
+            android:textSize="18dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:autoText="false"
+        android:text="Date of assessment (dd/mm/yyyy)"
+        android:textSize="21sp" />
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="8dp">
+
+        <EditText
+            android:id="@+id/e1"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:digits="1234567890"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:gravity="top"
+            android:maxLines="2"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:autoText="false"
+            android:text="/"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/e6"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:digits="1234567890"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:gravity="top"
+            android:maxLines="2"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:autoText="false"
+            android:text="/"
+            android:textSize="35sp" />
+
+        <EditText
+            android:id="@+id/e7"
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:digits="1234567890"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:gravity="top"
+            android:maxLines="2"
+            android:padding="10dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:autoText="false"
+            android:text="Height:"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/e2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:digits="1234567890"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:gravity="top"
+            android:maxLines="2"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="45dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="5dp"
+            android:autoText="false"
+            android:text="cm"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:autoText="false"
+            android:text="Weight:"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/e3"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:digits="1234567890"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:gravity="top"
+            android:maxLines="2"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="45dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="5dp"
+            android:autoText="false"
+            android:text="kg"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="373dp"
+        android:layout_height="74dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:autoText="false"
+            android:text="BMI:"
+            android:textSize="21sp" />
+
+
+        <TextView
+            android:id="@+id/BMI"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:digits="1234567890"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:gravity="top"
+            android:maxLines="2"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="65dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="5dp"
+            android:autoText="false"
+            android:text="kg/m2"
+
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:text="Blood pressure"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="120dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="5dp"
+            android:autoText="false"
+            android:text="1st"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/e4"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:digits="1234567890"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:gravity="top"
+            android:maxLines="2"
+            android:padding="10dp"
+             />
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="69dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="5dp"
+            android:autoText="false"
+            android:text="mm Hg"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="120dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="5dp"
+            android:autoText="false"
+            android:text="2nd"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/e5"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:digits="1234567890"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:gravity="top"
+            android:maxLines="2"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="69dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="5dp"
+            android:autoText="false"
+            android:text="mm Hg"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="65dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="15dp">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="No" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:text="Yes" />
+    </LinearLayout>
+
+
+</LinearLayout>
