@@ -89,19 +89,21 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
 
-    <RadioGroup
-        android:id="@+id/rg1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:ignore="DuplicateIds">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="41dp"
-            android:gravity="left"
-            android:orientation="horizontal"
-            android:paddingBottom="8dp"
-            android:paddingTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="5dp">
+
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <RadioButton
                 android:id="@+id/r1"
@@ -115,8 +117,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:text="Yes" />
-        </LinearLayout>
-    </RadioGroup>
+
+        </RadioGroup>
+    </LinearLayout>
 
 
     <TextView
@@ -126,18 +129,20 @@
         android:text="3.At present, are your menstrual bleeds (please tick):"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-    <RadioGroup
-        android:id="@+id/rg2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:ignore="DuplicateIds">
-        <LinearLayout
-            android:layout_width="328dp"
-            android:layout_height="41dp"
-            android:gravity="left"
-            android:orientation="horizontal"
-            android:paddingBottom="8dp"
-            android:paddingTop="5dp">
+
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="41dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="5dp">
+
+        <RadioGroup
+            android:id="@+id/rg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <RadioButton
                 android:id="@+id/r3"
@@ -156,8 +161,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:text="absent" />
-        </LinearLayout>
-    </RadioGroup>
+        </RadioGroup>
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/t4"

@@ -77,19 +77,20 @@
         android:text="Did you ever suffer from acne? "
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-    <RadioGroup
-        android:id="@+id/rg1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:ignore="DuplicateIds">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="41dp"
-            android:gravity="left"
-            android:orientation="horizontal"
-            android:paddingBottom="8dp"
-            android:paddingTop="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="5dp">
+
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <RadioButton
                 android:id="@+id/r1"
@@ -103,8 +104,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:text="Yes" />
-        </LinearLayout>
-    </RadioGroup>
+        </RadioGroup>
+    </LinearLayout>
+
 
 
     <TextView
@@ -114,42 +116,6 @@
         android:text="If yes, how old were you when this problem started?"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-
-
-    <LinearLayout
-        android:layout_width="328dp"
-        android:layout_height="wrap_content"
-        android:gravity="left"
-        android:orientation="horizontal"
-        android:paddingBottom="8dp"
-        android:paddingTop="5dp">
-
-        <EditText
-            android:id="@+id/e1"
-            android:layout_width="120dp"
-            android:layout_height="38dp"
-            android:layout_marginTop="10dp"
-            android:digits="1234567890"
-            android:drawablePadding="10dp"
-            android:ems="10"
-            android:hint="Years (YY)"
-            android:inputType="phone"
-            android:maxLines="2"
-            android:padding="10dp" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="329dp"
-            android:layout_height="38dp"
-            android:text="years (YY)" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="336dp"
-        android:layout_height="30dp"
-        android:text="If yes, how old were you when this problem started?"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <LinearLayout
         android:layout_width="328dp"
@@ -195,19 +161,19 @@
         android:text="Do you struggle with too much weight?"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-    <RadioGroup
-        android:id="@+id/rg2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:ignore="DuplicateIds">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="5dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="41dp"
-            android:gravity="left"
-            android:orientation="horizontal"
-            android:paddingBottom="8dp"
-            android:paddingTop="5dp">
+        <RadioGroup
+            android:id="@+id/rg2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <RadioButton
                 android:id="@+id/r3"
@@ -217,12 +183,12 @@
                 android:text="No" />
 
             <RadioButton
-                android:id="@+id/r2"
+                android:id="@+id/r4"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:text="Yes" />
-        </LinearLayout>
-    </RadioGroup>
+        </RadioGroup>
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView9"

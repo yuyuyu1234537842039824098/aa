@@ -75,22 +75,23 @@
             android:text="4.Fatty liver disease?"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle" />
 
-        <RadioGroup
-            android:id="@+id/rg1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:ignore="DuplicateIds">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="5dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="41dp"
-                android:gravity="left"
+            <RadioGroup
+                android:id="@+id/rg30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="8dp"
-                android:paddingTop="5dp">
+                >
 
                 <RadioButton
-                    android:id="@+id/r10"
+                    android:id="@+id/r5"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_marginRight="10dp"
@@ -98,13 +99,13 @@
                     android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
 
                 <RadioButton
-                    android:id="@+id/r20"
+                    android:id="@+id/r6"
                     android:layout_width="72dp"
                     android:layout_height="30dp"
                     android:text="Yes"
                     android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
-            </LinearLayout>
-        </RadioGroup>
+            </RadioGroup>
+        </LinearLayout>
     </LinearLayout>
 
     <TextView
@@ -184,22 +185,24 @@
             android:text="5.Stroke?"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle" />
 
-        <RadioGroup
-            android:id="@+id/rg1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:ignore="DuplicateIds">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="41dp"
-                android:gravity="left"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="5dp">
+
+            <RadioGroup
+                android:id="@+id/rg20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="8dp"
-                android:paddingTop="5dp">
+                >
 
                 <RadioButton
-                    android:id="@+id/r11"
+                    android:id="@+id/r3"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_marginRight="10dp"
@@ -207,13 +210,13 @@
                     android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
 
                 <RadioButton
-                    android:id="@+id/r21"
+                    android:id="@+id/r4"
                     android:layout_width="72dp"
                     android:layout_height="30dp"
                     android:text="Yes"
                     android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
-            </LinearLayout>
-        </RadioGroup>
+            </RadioGroup>
+        </LinearLayout>
     </LinearLayout>
 
     <TextView

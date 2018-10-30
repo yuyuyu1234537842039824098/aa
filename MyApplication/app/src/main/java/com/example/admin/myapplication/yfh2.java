@@ -27,28 +27,15 @@ package com.example.admin.myapplication;
 
 public class yfh2 extends AppCompatActivity {
     private DatabaseReference fDatabase;
-    //    private DatabaseReference BDatabse;
-    private RadioGroup radioGroup;
-    private TextView birth, patient_id;
-    private String phyle ="No";
+    private RadioGroup radioGroup, rg1,rg2;
     private Button button_forward;
-    private RadioButton r1,r2;
+    private String s1,s2,s3;
     String key;
 //    SQLHelper mDatabaseHelper;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.yfh1);
-//        fDatabse = FirebaseDatabase.getInstance().getReference("Birth");
-//        fDatabse.setValue("nn");
-//        BDatabse = FirebaseDatabase.getInstance().getReference("Bi");
-//        BDatabse.setValue(phyle);
-//        mDatabaseHelper=new SQLHelper(this);
-//        SQLiteDatabase database = mDatabaseHelper.getWritableDatabase();
-//        ContentValues values = new ContentValues();
-//        values.put("patientID", 12);
-//        database.insert("patients_table",null,values);
-//        values.clear();
         Intent intent=getIntent();
         key=intent.getStringExtra("id");
         fDatabase = FirebaseDatabase.getInstance().getReference("Patient");
@@ -56,25 +43,24 @@ public class yfh2 extends AppCompatActivity {
         button_forward.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                birth = (TextView) findViewById(R.id.birth);
-//                bir = birth.getText().toString();
-//                Map<String, Object> birthUpdate = new HashMap<>();
-//                birthUpdate.put("birth", bir);
-//                fDatabase.child(key).updateChildren(birthUpdate);
+                  Map<String, Object> yfh = new HashMap<>();
+                  yfh.put("Fatter liver disease", s2);
+                  yfh.put("Cancer", s1);
+                  yfh.put("Stroke", s3);
+                fDatabase.child(key).child("Your family Health").updateChildren(yfh);
                 Intent intent = new Intent();
                 intent.setClass(yfh2.this, com.example.admin.myapplication.yfh3.class);
-                intent.putExtra("cancer",phyle);
+                intent.putExtra("cancer",s1);
+                intent.putExtra("id",key);
                 startActivity(intent);
             }
         });
-//        r1= findViewById(R.id.r1);
-//        r2 = findViewById(R.id.r2);
-//        r2.
-//        patient_id = (TextView) findViewById(R.id.id);
-//        patient_id.setText(key);
-//        birth = (TextView) findViewById(R.id.birth);
         radioGroup = (RadioGroup) findViewById(R.id.rg10);
+        rg1 = (RadioGroup) findViewById(R.id.rg30);
+        rg2 = (RadioGroup) findViewById(R.id.rg20);
         radioGroup.setOnCheckedChangeListener(listener);
+        rg1.setOnCheckedChangeListener(listener1);
+        rg2.setOnCheckedChangeListener(listener2);
     }
 
 
@@ -83,9 +69,27 @@ public class yfh2 extends AppCompatActivity {
     private RadioGroup.OnCheckedChangeListener listener = new RadioGroup.OnCheckedChangeListener() {
         public void onCheckedChanged(RadioGroup group, int checkedId) {
             if(group.getCheckedRadioButtonId()==R.id.r1) {
-                phyle = "No";}
+                s1 = "No";}
             else{
-                phyle = "Yes";
+                s1 = "Yes";
+            }
+        }
+    };
+    private RadioGroup.OnCheckedChangeListener listener1 = new RadioGroup.OnCheckedChangeListener() {
+        public void onCheckedChanged(RadioGroup group, int checkedId) {
+            if(group.getCheckedRadioButtonId()==R.id.r5) {
+                s2 = "No";}
+            else{
+                s2 = "Yes";
+            }
+        }
+    };
+    private RadioGroup.OnCheckedChangeListener listener2 = new RadioGroup.OnCheckedChangeListener() {
+        public void onCheckedChanged(RadioGroup group, int checkedId) {
+            if(group.getCheckedRadioButtonId()==R.id.r3) {
+                s3 = "No";}
+            else{
+                s3 = "Yes";
             }
         }
     };

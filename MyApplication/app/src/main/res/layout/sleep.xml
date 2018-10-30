@@ -77,19 +77,20 @@
         android:text="Do you snore at night?	"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
-    <RadioGroup
-        android:id="@+id/rg1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:ignore="DuplicateIds">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="41dp"
-            android:gravity="left"
-            android:orientation="horizontal"
-            android:paddingBottom="8dp"
-            android:paddingTop="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="5dp">
+
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <RadioButton
                 android:id="@+id/r1"
@@ -111,9 +112,9 @@
                 android:layout_height="30dp"
                 android:layout_marginRight="10dp"
                 android:text="Don't know" />
+        </RadioGroup>
+    </LinearLayout>
 
-        </LinearLayout>
-    </RadioGroup>
 
 
 
@@ -140,49 +141,51 @@
         android:text="Do you feel depressed?	"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
-    <RadioGroup
-        android:id="@+id/rg1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:ignore="DuplicateIds">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:gravity="left"
-            android:orientation="vertical"
-            android:paddingBottom="10dp"
-            android:paddingTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="8dp">
+        <RadioGroup
+            android:id="@+id/rg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <RadioButton
-                android:id="@+id/r1"
+                android:id="@+id/r4"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:paddingBottom="10dp"
                 android:text="No" />
 
             <RadioButton
-                android:id="@+id/r2"
+                android:id="@+id/r5"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:paddingBottom="10dp"
                 android:text="YES – most of the time" />
 
             <RadioButton
-                android:id="@+id/r2"
+                android:id="@+id/r6"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:paddingBottom="10dp"
                 android:text="YES – sometimes " />
 
             <RadioButton
-                android:id="@+id/r2"
+                android:id="@+id/r7"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:paddingBottom="10dp"
                 android:text="DON’T KNOW" />
-        </LinearLayout>
-    </RadioGroup>
+        </RadioGroup>
+    </LinearLayout>
+
 
 
 </LinearLayout>
